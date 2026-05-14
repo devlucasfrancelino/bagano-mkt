@@ -1,38 +1,76 @@
-# BGN / Bagano — Marketing Gastronômico
+# Bagano MKT
 
-Site institucional em single-page para agência de **marketing gastronômico**. Projeto freelance.
+Landing page institucional da Bagano, uma agencia especializada em marketing gastronomico. O projeto apresenta a marca, seus servicos, metodo de trabalho, recortes de portfolio visual e um CTA de contato.
 
-## Sobre o projeto
+## O que existe no projeto
 
-Landing page com hero, sobre nós, carrossel de resultados e fale conosco. Layout responsivo (desktop e mobile), animações de entrada e faixas em xadrez nas laterais (desktop). Paleta em tons de vinho e bege.
+- Hero com chamada principal, botoes de navegacao e colagem visual.
+- Menu por ancoras para `Sobre`, `Servicos`, `Metodo`, `Portfolio` e `Contato`.
+- Faixa animada com especialidades da agencia.
+- Secao sobre a Bagano com explicacao do conceito da marca e ilustracao SVG inline.
+- Grade de servicos: posicionamento de marca, social media gastronomico, fotos/videos/direcao e campanhas/lancamentos.
+- Metodo em quatro etapas: mergulhar, temperar, servir e converter.
+- Portfolio com cards visuais alimentados por imagens hospedadas no Google Drive.
+- CTA final direcionando para WhatsApp.
 
 ## Stack
 
-- React (Create React App)
-- CSS puro (variáveis, grid, flex, media queries)
+- React 19
+- TypeScript
+- Vite
+- ESLint
+- CSS puro para layout, identidade visual e responsividade
 
-## Como rodar
+## Estrutura principal
+
+```text
+src/
+  App.tsx        Estrutura e conteudo da landing page
+  App.css        Estilos especificos da interface
+  index.css      Variaveis globais, reset e estilos base
+  main.tsx       Ponto de entrada do React
+  assets/        Assets versionados no projeto
+
+public/
+  favicon.svg    Favicon do site
+  icons.svg      Simbolos SVG disponiveis no projeto
+```
+
+## Como rodar localmente
+
+Instale as dependencias:
 
 ```bash
 npm install
-npm start
 ```
 
-Abre em [http://localhost:3000](http://localhost:3000).
+Inicie o servidor de desenvolvimento:
 
-Build para produção:
+```bash
+npm run dev
+```
+
+Gere a build de producao:
 
 ```bash
 npm run build
 ```
 
-## Estrutura
+Visualize a build localmente:
 
-- `src/App.js` — componentes e lógica da página (hero, sobre, carrossel, contato)
-- `src/index.css` — estilos globais, variáveis, responsivo e animações
-- `src/assets/` — logo e assets
-- `public/` — HTML, favicon, fontes
+```bash
+npm run preview
+```
 
----
+Rode o lint:
 
-Projeto freelance. BGN / Bagano MKT.
+```bash
+npm run lint
+```
+
+## Observacoes importantes
+
+- O conteudo da pagina esta hardcoded em `src/App.tsx`; nao existe CMS, backend ou rotas adicionais.
+- As imagens principais usadas no hero e no portfolio vem de URLs do Google Drive. Se os arquivos ficarem privados ou forem removidos, esses blocos deixam de carregar as fotos externas.
+- O botao de contato aponta para `https://wa.me/`. Antes de publicar, configure o link com o numero correto da Bagano.
+- Existem assets padrao do Vite/React em `src/assets/`; eles ainda estao no repositorio, mas nao sao usados pela interface principal.
