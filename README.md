@@ -67,10 +67,3 @@ Rode o lint:
 ```bash
 npm run lint
 ```
-
-## Observacoes importantes
-
-- O conteudo da pagina esta hardcoded em `src/App.tsx`; nao existe CMS, backend ou rotas adicionais.
-- As imagens principais usadas no hero e no portfolio vem de URLs do Google Drive. Se os arquivos ficarem privados ou forem removidos, esses blocos deixam de carregar as fotos externas.
-- O botao de contato aponta para `https://wa.me/`. Antes de publicar, configure o link com o numero correto da Bagano.
-- Existem assets padrao do Vite/React em `src/assets/`; eles ainda estao no repositorio, mas nao sao usados pela interface principal.
