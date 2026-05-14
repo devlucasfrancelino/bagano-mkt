@@ -146,7 +146,7 @@ function App() {
             style={{ '--photo': `url(${drivePhotos[1]})` } as React.CSSProperties}
           />
           <div className="monogram-orb">
-            <span>BNG</span>
+            <span>BGN</span>
           </div>
           <div className="hero-note">
             <strong>Branding / conteúdo / desejo</strong>
